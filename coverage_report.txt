@@ -1,0 +1,8 @@
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+src/__init__.py         0      0   100%
+src/exceptions.py       6      0   100%
+src/models.py         184      1    99%   220
+src/sistema.py        163      1    99%   237
+-------------------------------------------------
+TOTAL                 353      2    99%
