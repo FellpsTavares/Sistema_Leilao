@@ -14,7 +14,7 @@ sys.path.insert(0, project_root)
 from src.sistema import SistemaLeiloes
 from src.models import Participante, Leilao, EstadoLeilao, Lance
 from src.exceptions import ParticipanteInvalido, LeilaoInvalido, LanceInvalido
-from freezegun import freeze_time
+from freezegun import freeze_time # type: ignore
 
 class TestSistemaLeiloes(unittest.TestCase):
 
