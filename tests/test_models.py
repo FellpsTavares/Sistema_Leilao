@@ -3,13 +3,9 @@ from datetime import date, datetime, timedelta
 import sys
 import os
 
-# Não é mais necessário modificar sys.path se executado como módulo ou com PYTHONPATH
-# sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
-
-# Imports absolutos a partir da raiz do projeto (assumindo que leilao_system está no PYTHONPATH ou executado de lá)
 from src.models import Participante, Lance, Leilao, EstadoLeilao
 from src.exceptions import LanceInvalido, LeilaoInvalido, ParticipanteInvalido
-from freezegun import freeze_time
+from freezegun import freeze_time # type: ignore
 
 class TestParticipante(unittest.TestCase):
 
